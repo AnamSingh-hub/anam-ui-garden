@@ -1,46 +1,87 @@
-# Getting Started with Create React App
+# Anam UI Garden
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
+Anam UI Garden is a React and TypeScript component library created for Web Component Library Assignment 12. It contains reusable UI components styled with Styled Components.
 
-## Available Scripts
+## Components
+The project includes the following components:
 
-In the project directory, you can run:
+1. Button
+2. Label
+3. Text
+4. Table
+5. TableHeader
+6. TableRow
+7. TableCell
+8. TableFooter
+9. Dropdown
+10. RadioButton
+11. Img
+12. HeroImage
+13. Card
 
-### `npm start`
+## Technologies Used
+- React
+- TypeScript
+- Styled Components
+- Storybook
+- Jest and React Testing Library
+- Docker and Nginx
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Run the Project Locally
+Install dependencies:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+npm install
+```
 
-### `npm test`
+Start the React development server:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm start
+```
 
-### `npm run build`
+## Run Storybook
+Start Storybook to view the component stories:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm run storybook
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Storybook normally opens at http://localhost:6006.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Run Tests
+Run the test suite:
 
-### `npm run eject`
+```bash
+npm test -- --watchAll=false
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Create a Production Build
+```bash
+npm run build
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Run with Docker
+Build the Docker image:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+docker build -t anam_ui_garden .
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Start the container:
 
-## Learn More
+```bash
+docker run --name anam_coding_assignment12 -p 8083:80 -d anam_ui_garden
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Open http://localhost:8083 to view the application.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To stop the container:
+
+```bash
+docker stop anam_coding_assignment12
+```
+
+## GitHub Repository
+https://github.com/AnamSingh-hub/anam-ui-garden
