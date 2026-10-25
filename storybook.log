@@ -1,0 +1,19 @@
+npm error code ERESOLVE
+npm error ERESOLVE unable to resolve dependency tree
+npm error
+npm error While resolving: anam_ui_garden@0.1.0
+npm error Found: storybook@8.6.19
+npm error node_modules/storybook
+npm error   dev storybook@"^8.6.14" from the root project
+npm error
+npm error Could not resolve dependency:
+npm error peer storybook@"^9.0.0 || ^10.0.0-0 || ^10.1.0-0 || ^10.2.0-0 || ^10.3.0-0 || ^10.4.0-0" from @storybook/addon-webpack5-compiler-swc@4.0.3
+npm error node_modules/@storybook/addon-webpack5-compiler-swc
+npm error   dev @storybook/addon-webpack5-compiler-swc@"4.0.3" from the root project
+npm error
+npm error Fix the upstream dependency conflict, or retry this command with --force or --legacy-peer-deps to accept an incorrect (and potentially broken) dependency resolution.
+npm error
+npm error
+npm error For a full report see:
+npm error C:\Users\LENOVO\AppData\Local\npm-cache\_logs\2026-10-25T00_19_56_208Z-eresolve-report.txt
+npm error A complete log of this run can be found in: C:\Users\LENOVO\AppData\Local\npm-cache\_logs\2026-10-25T00_19_56_208Z-debug-0.log

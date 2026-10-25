@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import { Button } from "./components/Button/Button";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ fontFamily: "Arial, sans-serif", padding: "32px" }}>
+      <h1>Anam UI Garden</h1>
+      <p>React Component Library</p>
+
+      <section style={{ marginBottom: "24px" }}>
+        <h2>Button</h2>
+        <Button label="Default Button" />
+        <span style={{ marginLeft: "12px" }}>
+          <Button label="Disabled Button" disabled />
+        </span>
+      </section>
     </div>
   );
 }
