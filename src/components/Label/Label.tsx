@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export interface LabelProps {
   children?: React.ReactNode;
@@ -10,12 +10,12 @@ export function Label({ children, disabled = false }: LabelProps) {
     <div
       aria-disabled={disabled}
       style={{
-        padding: "12px",
+        padding: '12px',
         opacity: disabled ? 0.5 : 1,
-        backgroundColor: disabled ? "#d1d5db" : "white",
+        backgroundColor: disabled ? '#d1d5db' : 'white',
       }}
     >
-      {children ?? "Label component"}
+      {children ?? 'Label component'}
     </div>
   );
 }

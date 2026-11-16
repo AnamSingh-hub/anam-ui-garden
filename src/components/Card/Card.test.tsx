@@ -1,12 +1,12 @@
-import { render, screen } from "@testing-library/react";
-import { Card } from "./Card";
+import { render, screen } from '@testing-library/react';
+import { Card } from './Card';
 
-test("Card renders", () => {
+test('Card renders', () => {
   render(<Card>Test content</Card>);
-  expect(screen.getByText("Test content")).toBeInTheDocument();
+  expect(screen.getByText('Test content')).toBeInTheDocument();
 });
 
-test("Card supports disabled state", () => {
+test('Card supports disabled state', () => {
   render(<Card disabled>Disabled content</Card>);
-  expect(screen.getByText("Disabled content")).toBeInTheDocument();
+  expect(screen.getByText('Disabled content')).toBeInTheDocument();
 });

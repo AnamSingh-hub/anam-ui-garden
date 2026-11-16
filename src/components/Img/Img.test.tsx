@@ -1,12 +1,12 @@
-import { render, screen } from "@testing-library/react";
-import { Img } from "./Img";
+import { render, screen } from '@testing-library/react';
+import { Img } from './Img';
 
-test("Img renders", () => {
+test('Img renders', () => {
   render(<Img>Test content</Img>);
-  expect(screen.getByText("Test content")).toBeInTheDocument();
+  expect(screen.getByText('Test content')).toBeInTheDocument();
 });
 
-test("Img supports disabled state", () => {
+test('Img supports disabled state', () => {
   render(<Img disabled>Disabled content</Img>);
-  expect(screen.getByText("Disabled content")).toBeInTheDocument();
+  expect(screen.getByText('Disabled content')).toBeInTheDocument();
 });

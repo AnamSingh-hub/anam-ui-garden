@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export interface RadioButtonProps {
   children?: React.ReactNode;
@@ -10,12 +10,12 @@ export function RadioButton({ children, disabled = false }: RadioButtonProps) {
     <div
       aria-disabled={disabled}
       style={{
-        padding: "12px",
+        padding: '12px',
         opacity: disabled ? 0.5 : 1,
-        backgroundColor: disabled ? "#d1d5db" : "white",
+        backgroundColor: disabled ? '#d1d5db' : 'white',
       }}
     >
-      {children ?? "RadioButton component"}
+      {children ?? 'RadioButton component'}
     </div>
   );
 }

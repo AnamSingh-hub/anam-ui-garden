@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export interface ButtonProps {
   label: string;
@@ -27,7 +27,7 @@ const StyledButton = styled.button<{
 
 export function Button({
   label,
-  backgroundColor = "#2563eb",
+  backgroundColor = '#2563eb',
   disabled = false,
   onClick,
 }: ButtonProps) {

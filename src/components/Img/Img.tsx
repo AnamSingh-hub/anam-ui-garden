@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export interface ImgProps {
   children?: React.ReactNode;
@@ -10,12 +10,12 @@ export function Img({ children, disabled = false }: ImgProps) {
     <div
       aria-disabled={disabled}
       style={{
-        padding: "12px",
+        padding: '12px',
         opacity: disabled ? 0.5 : 1,
-        backgroundColor: disabled ? "#d1d5db" : "white",
+        backgroundColor: disabled ? '#d1d5db' : 'white',
       }}
     >
-      {children ?? "Img component"}
+      {children ?? 'Img component'}
     </div>
   );
 }

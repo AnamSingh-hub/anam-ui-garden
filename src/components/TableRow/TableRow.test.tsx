@@ -1,12 +1,12 @@
-import { render, screen } from "@testing-library/react";
-import { TableRow } from "./TableRow";
+import { render, screen } from '@testing-library/react';
+import { TableRow } from './TableRow';
 
-test("TableRow renders", () => {
+test('TableRow renders', () => {
   render(<TableRow>Test content</TableRow>);
-  expect(screen.getByText("Test content")).toBeInTheDocument();
+  expect(screen.getByText('Test content')).toBeInTheDocument();
 });
 
-test("TableRow supports disabled state", () => {
+test('TableRow supports disabled state', () => {
   render(<TableRow disabled>Disabled content</TableRow>);
-  expect(screen.getByText("Disabled content")).toBeInTheDocument();
+  expect(screen.getByText('Disabled content')).toBeInTheDocument();
 });

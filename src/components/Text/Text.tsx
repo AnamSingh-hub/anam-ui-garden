@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export interface TextProps {
   children?: React.ReactNode;
@@ -10,12 +10,12 @@ export function Text({ children, disabled = false }: TextProps) {
     <div
       aria-disabled={disabled}
       style={{
-        padding: "12px",
+        padding: '12px',
         opacity: disabled ? 0.5 : 1,
-        backgroundColor: disabled ? "#d1d5db" : "white",
+        backgroundColor: disabled ? '#d1d5db' : 'white',
       }}
     >
-      {children ?? "Text component"}
+      {children ?? 'Text component'}
     </div>
   );
 }

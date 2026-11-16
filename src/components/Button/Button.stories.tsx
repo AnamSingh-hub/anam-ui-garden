@@ -1,33 +1,37 @@
+import { useState } from 'react';
+import type { Meta, StoryObj } from '@storybook/react';
+import { Button } from './Button';
 
-import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from "./Button";
-
-const meta = {
-  title: "Components/Button",
+const meta: Meta<typeof Button> = {
+  title: 'Components/Button',
   component: Button,
-  argTypes: {
-    label: { control: "text" },
-    backgroundColor: { control: "color" },
-    disabled: { control: "boolean" },
-  },
 };
 
 export default meta;
 
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<typeof Button>;
+
+function InteractiveButton() {
+  const [clicked, setClicked] = useState(false);
+
+  return (
+    <Button
+      label={clicked ? 'Clicked Successfully!' : 'Click Me'}
+      backgroundColor="#2563eb"
+      disabled={false}
+      onClick={() => setClicked(true)}
+    />
+  );
+}
 
 export const Default: Story = {
-  args: {
-    label: "Click Me",
-    backgroundColor: "#2563eb",
-    disabled: false,
-  },
+  render: () => <InteractiveButton />,
 };
 
 export const Disabled: Story = {
   args: {
-    label: "Disabled Button",
-    backgroundColor: "#2563eb",
+    label: 'Disabled Button',
+    backgroundColor: '#2563eb',
     disabled: true,
   },
 };
